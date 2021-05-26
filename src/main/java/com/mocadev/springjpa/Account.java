@@ -1,5 +1,9 @@
 package com.mocadev.springjpa;
 
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -24,6 +28,12 @@ public class Account {
 
 	private String firstname;
 	private String lastname;
+
+	@Embedded
+	@AttributeOverrides({
+		@AttributeOverride(name = "street", column = @Column(name = "home_street"))
+	})
+	private Address homeAddress;
 
 	public Long getId() {
 		return id;
