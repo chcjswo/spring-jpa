@@ -20,7 +20,6 @@ public class JpaRunner implements ApplicationRunner {
 	@PersistenceContext
 	EntityManager entityManager;
 
-
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		Account account = new Account();
