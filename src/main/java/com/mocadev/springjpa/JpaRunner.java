@@ -29,7 +29,7 @@ public class JpaRunner implements ApplicationRunner {
 		Study study = new Study();
 		study.setName("JPA");
 
-		account.addStudy(study);
+//		account.addStudy(study);
 
 		Session session = entityManager.unwrap(Session.class);
 		session.save(account);
