@@ -14,7 +14,8 @@ import javax.persistence.Id;
 @Entity
 public class Account {
 
-	@Id @GeneratedValue
+	@Id
+	@GeneratedValue
 	private Long id;
 
 	private String username;

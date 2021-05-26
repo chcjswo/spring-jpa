@@ -10,7 +10,8 @@ import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
  * @version 1.0.0
  * @since 2020-12-20
  **/
-public class SimpleRepositoryImpl<T, ID extends Serializable> extends SimpleJpaRepository<T, ID> implements
+public class SimpleRepositoryImpl<T, ID extends Serializable> extends
+	SimpleJpaRepository<T, ID> implements
 	SimpleRepository<T, ID> {
 
 	private EntityManager em;

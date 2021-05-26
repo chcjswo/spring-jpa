@@ -1,4 +1,5 @@
 package com.mocadev.springjpa.post;
+
 ;
 import static org.assertj.core.api.Assertions.assertThat;
 

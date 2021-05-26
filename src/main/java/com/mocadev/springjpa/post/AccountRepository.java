@@ -9,6 +9,7 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
  * @version 1.0.0
  * @since 2020-12-20
  **/
-public interface AccountRepository extends JpaRepository<Account, Long>, QuerydslPredicateExecutor<Account> {
+public interface AccountRepository extends JpaRepository<Account, Long>,
+	QuerydslPredicateExecutor<Account> {
 
 }

@@ -24,7 +24,7 @@ public class Post extends AbstractAggregateRoot<Post> {
 	@Lob
 	private String content;
 
-//	@Temporal(TemporalType.TIMESTAMP)
+	//	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime created;
 
 	public Long getId() {
