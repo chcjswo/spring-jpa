@@ -21,6 +21,7 @@ dependencies {
     testImplementation group: 'com.h2database', name: 'h2', version: '1.4.199'
     implementation 'com.querydsl:querydsl-jpa'
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    runtimeOnly 'com.h2database:h2'
 }
 
 //querydsl 추가 시작
